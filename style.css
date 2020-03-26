@@ -7,6 +7,7 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  margin: auto 0;
 }
 
 h1 {
@@ -21,9 +22,9 @@ font-family: 'Pinyon Script', cursive; */
 }
 
 hr {
-    border-color: pink;
+    border-color: #ff33cc;
     border-width: 3px;
-    max-width: 115px;
+    max-width: 200px;
 
 }
 
@@ -42,14 +43,14 @@ hr {
 }
 
 .btn-primary {
-    background-color: pink;
-    border-color: pink;
+    background-color: #ff33cc; 
+    border-color:  #ff33cc; 
 
 }
 
 .btn-primary:hover {
-    background-color: rgb(255, 155, 172);
-    border-color: pink;
+    background-color: #ff33cc;
+    border-color: #ff33cc;
     border-width: 4px;
 
 }
@@ -69,6 +70,7 @@ hr {
 img {
     max-width:100%;
     height:auto; 
+    
 
     /* height: auto; 
     width: auto;  */
@@ -79,15 +81,61 @@ img {
 .zone {
     cursor:pointer;
     transition: all 0.3s linear;
+
 }
 
-.zone:hover {
+@media only screen and (max-width: 600px) {
+
+}
+
+.push {
+    margin-left: auto;
+    /* float: right; */
+}
+
+
+.nav a {
+    display: flex;
+    list-style: none;
+    font-size: 2em;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Great Vibes','Parisienne','Pinyon Script', cursive;
+    color: #ff33cc; 
+    text-decoration: none;
+}
+
+.nav li:hover {
     -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
-    -o-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:#6cb15fcc 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
     box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
 }
 
 
+li {
+    padding: 10px;
+}
+
+
+
+.zone:hover {
+    -webkit-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -moz-box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    -o-box-shadow:#6cb15fcc 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+.footer {
+    font-family: 'Great Vibes','Parisienne','Pinyon Script', cursive;
+    color: #ff33cc; 
+    text-align: center;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 
 
